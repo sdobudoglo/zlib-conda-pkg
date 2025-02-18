@@ -7,13 +7,15 @@ package:
 
 source:
   - url: https://github.com/madler/zlib/releases/download/v{{ version }}/zlib-{{ version }}.tar.gz
-    folder: src
-    sha256: 9A93B2B7DFDAC77CEBA5A558A580E74667DD6FEDE4585B91EEFB60F03B72DF23
-
-build:
-  number: 1
+    folder: .
+    sha256: 9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23
 
 requirements:
   build:
     - {{ compiler('cxx') }}	# [win]
     - make               	# [unix]
+
+about:
+  home: https://www.zlib.net/
+  license: zlib License
+  summary: A software library used for data compression as well as a data format

@@ -1,5 +1,5 @@
 # configure the project
-./src/configure --prefix=${PREFIX}
+./configure --prefix=${PREFIX}
 
 # build the project
 make
